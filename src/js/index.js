@@ -2230,7 +2230,7 @@
         for (var i=0; i<words.length; i++) {
             var word = words[i];
             var wordIndex = WORDLISTS[language].indexOf(word);
-            wordIndexes.push(wordIndex);
+            wordIndexes.push(wordIndex+1);
         }
         var wordIndexesStr = wordIndexes.join(", ");
         DOM.entropyWordIndexes.text(wordIndexesStr);
